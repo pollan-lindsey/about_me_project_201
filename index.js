@@ -70,6 +70,19 @@ if(answerOne === 'n'){
     alert('incorrect');
 }
 
+//start function
+function numberGame() {
+//for loop and set i to equal stuff
+for (let i = 0, i < 4, i++)
+//set answer as 2
+//set < 2 to too low
+//set > 2 to too high
+//else the answer is correct
+//end function
+}
+
+
+
 
 //thank user for taking the quiz :)
 alert('thank you for taking this quiz :)')
