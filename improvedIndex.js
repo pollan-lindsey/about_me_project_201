@@ -19,18 +19,20 @@ function q1(){
         points++;
         alert('correct');
         q2();
-    } else {
+    }else{ 
         //console.log('incorrect')
         alert('incorrect');
-        q2();
+        q2();}
     }
-}
+
+ 
+
 
 function q2(){
     let answerTwo = prompt('Was Petco my first place of employment? Answer y/n');
     //edit case
     console.log(answerTwo.toLowerCase());
-    let answerTwoL = AnswerTwo.toLowerCase();
+    let answerTwoL = answerTwo.toLowerCase();
     //tell user they were right or wrong
     if(answerTwoL === 'n'){
         //console.log('correct');
@@ -49,7 +51,7 @@ function q3(){
     //edit case
     console.log(answerThree.toLowerCase());
     //tell user they were right or wrong
-    if(answerThree === 'y'){
+    if(answerThree === 'n'){
         //console.log('correct');
         points++;
         alert('correct');
@@ -92,10 +94,33 @@ function q5(){
         alert('incorrect');
     }
     alert('thank you for taking this quiz :)');
-    alert("You got " + points + "!");
-}
+    alert('You got ' + points + '!');
+}//start function
+function teamGame(){
+    //set array of teams
+        const teams = ['Boston Bruins', 'Vegas Golden Knights', 'New Jersey Devils', 'Colorado Avalanche'];
+    //write conditions of for loop
+        for (let i = 0; i < 6; i++){
+    //ask the question
+        let answerSeven = prompt('which of the following teams are in the top 5 on my hockey team list (There is more than one answer.) Vegas Golden Knights, Colorado Avalanche, New Jersey Devils, Boston Bruins?');
+    // take away case sensitivity 
+        let answerSevenL = answerSeven.toLocaleUpperCase();
+    //set correct answers
+        if (answerSevenL == 'Vegas Golden Knights' || answerSevenL == 'Boston Bruins'){
+           points++;
+           alert('Correct!');
+    //end loop
+            break;
+    //alert for wrong answers
+            }else{
+            alert('Incorrect!');
+            }
+        }
+        }
+    
 
 //start function
+function gameStartPart2(){
 function numberGame() {
     //set answer to two
     let num = "5";
@@ -118,32 +143,26 @@ function numberGame() {
      }  
     }
 }
-    
 //start function
 function teamGame(){
-//set array of teams
-    const teams = ["Boston Bruins", "Vegas Golden Knights", "New Jersey Devils", "Colorado Avalanche"];
-//write conditions of for loop
-    for (let i = 0; i < 6; i++){
-//ask the question
-    let answerSeven = prompt("which of the following teams are in the top 5 on my hockey team list (There's more than one answer.) Vegas Golden Knights, Colorado Avalanche, New Jersey Devils, Boston Bruins?");
-// take away case sensitivity 
-    let answerSevenL = answerSeven.toLocaleUpperCase();
-//set correct answers
-    if (answerSevenL == "Vegas Golden Knights" || answerSevenL == "Boston Bruins"){
-       points++;
-        alert("Correct!");
-//end loop
-        break;
+    //set array of teams
+        const teams = ["Boston Bruins", "Vegas Golden Knights", "New Jersey Devils", "Colorado Avalanche"];
+    //write conditions of for loop
+        for (let i = 0; i < 6; i++){
+    //ask the question
+        let answerSeven = prompt("which of the following teams are in the top 5 on my hockey team list (There's more than one answer.) Vegas Golden Knights, Colorado Avalanche, New Jersey Devils, Boston Bruins?");
+    // take away case sensitivity 
+        let answerSevenL = answerSeven.toLocaleUpperCase();
+    //set correct answers
+        if (answerSevenL == "Vegas Golden Knights" || answerSevenL == "Boston Bruins"){
+           points++;
+           alert("Correct!");
+    //end loop
+            break;
+    //alert for wrong answers
+            }else{
+            alert("Incorrect!");
+            }
+        }
+        }
     }
-//alert for wrong answers
-    else{
-        alert("Incorrect!");
-       
-    }
-}
-}
-   
-    
-//thank user for taking the quiz :)
-alert('thank you for taking this quiz :)') 
