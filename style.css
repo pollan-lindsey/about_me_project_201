@@ -2,6 +2,41 @@ body {
   background-color: #FDB9C8;  
 }
 
-h2 {
+h1 {
+  color: #630436;
+  text-align: center;
+}
 
+h2 {
+  color: #630436;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+ul {
+text-align: center;
+list-style-position: inside;
+vertical-align: text-top;
+
+} 
+
+ol {
+  text-align: center;
+  list-style-position: inside;
+}
+
+.button {
+  border-radius: 12px;
+  text-align: center;
+  display: inline-block;
+  color: #630436
+}
+
+.disabled {
+  border-radius: 12px;
+  cursor: not-allowed;
+  color: #630436
 }
